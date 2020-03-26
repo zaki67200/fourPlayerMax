@@ -16,36 +16,31 @@ window.addEventListener("DOMContentLoaded", function(event) {
                     var maxPlayed = getMax (json,"played");
                     var maxVictory = getMax (json,"victory");
 
-                          apiList1.innerHTML +='<h1>'+maxAttack.id+'  '+maxAttack.name+'</h1>'
+                          apiList1.innerHTML +='<div class="titre"><h1>'+maxAttack.id+'  '+maxAttack.name+'</h1>'+'<h5>'+'Played :  ' + maxAttack.played +' | '+'Victoire : '+ maxAttack.victory+'</h5></div>'
 
-                          apiList1.innerHTML += '<h5>'+'Played :  ' + maxAttack.played +' | '+'Victoire : '+ maxAttack.victory+'</h5>'
-
-                          apiList1.innerHTML += '<h2>'+'Power  :'+maxAttack.power+'</h2>'
-                          apiList1.innerHTML +='<h2>'+'Attaque :'+maxAttack.attack+'</h2>'
-                          apiList1.innerHTML +='<h2>'+'Defense :'+maxAttack.armor+'</h2>'
-
-                          apiList2.innerHTML +='<h1>'+maxArmor.id+'  '+maxArmor.name+'</h1>'
-                          apiList2.innerHTML += '<h5>'+'Played :  ' + maxArmor.played +' | '+'Victoire : '+ maxArmor.victory+'</h5>'
-
-                          apiList2.innerHTML += '<h2>'+'Power  :'+maxArmor.power+'</h2>'
-                          apiList2.innerHTML +='<h2>'+'Attaque :'+maxArmor.attack+'</h2>'
-                          apiList2.innerHTML +='<h2>'+'Defense :'+maxArmor.armor+'</h2>'
+                          apiList1.innerHTML +='<div class ="capacity"><h2>'+'Power  :'+maxAttack.power+'</h2>'+'<h2>'+'Attaque :'+maxAttack.attack+'</h2>'+'<h2>'+'Defense :'+maxAttack.armor+'</h2></div>'
 
 
-                          apiList3.innerHTML +='<h1>'+maxPlayed.id+'  '+maxPlayed.name+'</h1>'
-                          apiList3.innerHTML += '<h5>'+'Played :  ' + maxPlayed.played +' | '+'Victoire : '+ maxPlayed.victory+'</h5>'
+                          apiList2.innerHTML +='<div class="titre"><h1>'+maxArmor.id+'  '+maxArmor.name+'</h1>'+'<h5>'+'Played :  ' + maxArmor.played +' | '+'Victoire : '+ maxArmor.victory+'</h5></div>'
 
-                          apiList3.innerHTML += '<h2>'+'Power  :'+maxPlayed.power+'</h2>'
-                          apiList3.innerHTML +='<h2>'+'Attaque :'+maxPlayed.attack+'</h2>'
-                          apiList3.innerHTML +='<h2>'+'Defense :'+maxPlayed.armor+'</h2>'
+                          apiList2.innerHTML +='<div class ="capacity"><h2>'+'Power  :'+maxArmor.power+'</h2>'+'<h2>'+'Attaque :'+maxArmor.attack+'</h2>'+'<h2>'+'Defense :'+maxArmor.armor+'</h2></div>'
 
 
-                          apiList4.innerHTML +='<h1>'+maxVictory.id+'  '+maxVictory.name+'</h1>'
-                          apiList4.innerHTML += '<h5>'+'Played :  ' + maxVictory.played +' | '+'Victoire : '+ maxVictory.victory+'</h5>'
+                          apiList3.innerHTML +='<div class="titre"><h1>'+maxPlayed.id+'  '+maxPlayed.name+'</h1>'+'<h5>'+'Played :  ' + maxPlayed.played +' | '+'Victoire : '+ maxPlayed.victory+'</h5></div>'
 
-                          apiList4.innerHTML += '<h2>'+'Power  :'+maxVictory.power+'</h2>'
-                          apiList4.innerHTML +='<h2>'+'Attaque :'+maxVictory.attack+'</h2>'
-                          apiList4.innerHTML +='<h2>'+'Defense :'+maxVictory.armor+'</h2>'
+                          apiList3.innerHTML +='<div class ="capacity"><h2>'+'Power  :'+maxPlayed.power+'</h2>'+'<h2>'+'Attaque :'+maxPlayed.attack+'</h2>'+'<h2>'+'Defense :'+maxPlayed.armor+'</h2></div>'
+
+
+                          apiList4.innerHTML +='<div class="titre"><h1>'+maxVictory.id+'  '+maxVictory.name+'</h1>'+'<h5>'+'Played :  ' + maxVictory.played +' | '+'Victoire : '+ maxVictory.victory+'</h5></div>'
+
+                          apiList4.innerHTML +='<div class ="capacity"><h2>'+'Power  :'+maxVictory.power+'</h2>'+'<h2>'+'Attaque :'+maxVictory.attack+'</h2>'+'<h2>'+'Defense :'+maxVictory.armor+'</h2></div>'
+
+
+
+
+
+
+
 
 
 
